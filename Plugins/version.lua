@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
   if matches[1]:lower() == 'pattern' then -- Put everything you like :)
-    send_document(get_receiver(msg), "/home/mahdi/gamer25/files/gamer.webp", ok_cb, false)
+    send_document(get_receiver(msg), "./files/sticker.webp", ok_cb, false)
     return 'test'
   end
 end
