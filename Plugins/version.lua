@@ -1,15 +1,17 @@
 do
 
 function run(msg, matches)
+  return [[telegamer
+  now open source
+  https://github.com/TELEGAMER]]
 send_document(get_receiver(msg), "./files/sticker.webp", ok_cb, false)
 end
 
 return {
-patterns = {
-"^pattern$",
-
-},
-run = run
+  patterns = {
+    "^(.+)pattern$"
+  }, 
+  run = run 
 }
 
 end
